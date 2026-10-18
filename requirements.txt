@@ -1,0 +1,7 @@
+# SentinelZ AI — Production Dependencies for IBM LinuxONE (s390x)
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+pydantic>=2.9.0
+sqlalchemy>=2.0.30
+httpx>=0.27.0
+pytest>=8.3.0

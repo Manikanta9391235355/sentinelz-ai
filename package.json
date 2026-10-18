@@ -1,17 +1,24 @@
 {
-  "name": "aetherpulse",
-  "version": "0.1.0",
+  "name": "sentinelz-ai",
+  "version": "1.0.0",
+  "description": "SentinelZ AI — Privacy-First AI Security & Threat Detection Platform for IBM LinuxONE",
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "backend": "python -m uvicorn backend.app.main:app --port 8000 --reload",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test:backend": "python -m pytest backend/tests -v"
   },
   "dependencies": {
+    "clsx": "^2.1.1",
+    "lucide-react": "^1.27.0",
     "next": "16.2.12",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "recharts": "^3.10.1",
+    "tailwind-merge": "^3.6.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

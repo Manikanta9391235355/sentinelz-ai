@@ -12,6 +12,20 @@
 
 # testing
 /coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+ENV/
 
 # next.js
 /.next/
@@ -20,22 +34,55 @@
 # production
 /build
 
-# misc
-.DS_Store
+# security & secrets
 *.pem
+*.key
+*.cert
+*.crt
+.env
+.env*.local
+!.env.example
 
-# debug
+# databases & local caches
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# temporary files & non-project assets
+deploy_dist/
+scratch/
+contant.docx
+*.zip
+*.tar.gz
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
+# legacy non-SentinelZ files
+backend/storage/
+public/marseli-*
+public/exact-marseli-*
+public/pulse.html
+prisma/
+deploy-cloud-run.ps1
+cloudbuild.yaml
+firebase.json
+.firebaserc
+.gcloudignore
+netlify.toml
+next.config.js
 
-# vercel
-.vercel
-
-# typescript
+# system & IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
 *.tsbuildinfo
 next-env.d.ts
+
+# cloud deployment temp
+.vercel
+.netlify
